@@ -1,13 +1,6 @@
 <?php
 
-/**
- * LudicrousDB Class
- *
- * @package Plugins/LudicrousDB/Class
- */
-
-// Exit if accessed directly
-defined( 'ABSPATH' ) || exit;
+namespace CarbonPHP;
 
 /**
  * The main LudicrousDB class, which extends wpdb
