@@ -59,5 +59,4 @@ composer.lock
 /xmlrpc.php
 /wp-admin
 /wp-includes
-/wp-content/index.php
-/wp-content/themes/
+/wp-content/*
