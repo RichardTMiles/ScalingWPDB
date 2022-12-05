@@ -1,5 +1,5 @@
-=== LudicrousDB ===
-Contributors: johnjamesjacoby, spacedmonkey
+=== scaling-wpdb ===
+Contributors: johnjamesjacoby, spacedmonkey, RichardTMiles
 Tags: mysql, scaling, performance, availability, replication
 Requires at least: 4.8
 Tested up to: 5.3

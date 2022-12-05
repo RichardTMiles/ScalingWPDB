@@ -30,3 +30,34 @@ composer.lock
 # Users Environment Variables
 .lock-wscript
 .DS_Store
+
+# wp core (as of 4.9.5)
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-app.php
+/wp-atom.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-commentsrss2.php
+/wp-config-sample.php
+/wp-cron.php
+/wp-feed.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-rdf.php
+/wp-rss.php
+/wp-rss2.php
+/wp-pass.php
+/wp-register.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+/wp-admin
+/wp-includes
+/wp-content/index.php
+/wp-content/themes/

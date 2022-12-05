@@ -34,8 +34,8 @@ if ( isset( $GLOBALS['wpdb'] ) ) {
 }
 
 // Required files
-require_once dirname( __FILE__ ) . '/ludicrousdb/includes/functions.php';
-require_once dirname( __FILE__ ) . '/ludicrousdb/includes/class-ludicrousdb.php';
+require_once dirname(__FILE__) . '/src/includes/functions.php';
+require_once dirname(__FILE__) . '/src/includes/class-ludicrousdb.php';
 
 // Set default constants
 ldb_default_constants();

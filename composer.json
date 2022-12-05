@@ -1,8 +1,7 @@
 {
-  "name": "stuttter/ludicrousdb",
+  "name": "drop-in-gaming/scalingwpdb",
   "description": "LudicrousDB is a database class that supports replication, failover, load balancing, & partitioning, based on Automattic's HyperDB drop-in.",
-  "homepage": "https://github.com/stuttter/ludicrousdb",
-  "type": "wordpress-muplugin",
+  "homepage": "https://github.com/dropingaming/scalingwpdb",
   "license"    : "GPL-2.0-or-later",
   "authors": [
     {
@@ -12,28 +11,33 @@
     {
       "name": "Jonny Harris",
       "email": "jon@spacedmonkey.co.uk"
+    },
+    {
+      "name": "Richard Miles",
+      "email": "richard@miles.systems"
     }
   ],
   "support"    : {
-    "issues": "https://github.com/stuttter/ludicrousdb/issues",
-    "source": "https://github.com/stuttter/ludicrousdb"
-  },
-  "require": {
-    "php": ">=5.2",
-    "composer/installers": "~1.0"
-  },
-  "require-dev": {
-    "wp-coding-standards/wpcs": "^2.2",
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
-    "phpcompatibility/phpcompatibility-wp": "^2.1",
-    "sirbrillig/phpcs-variable-analysis": "^2.8"
+    "issues": "https://github.com/Drop-In-Gaming/scalingwpdb/issues",
+    "source": "https://github.com/Drop-In-Gaming/scalingwpdb/scalingwpdb"
   },
   "scripts": {
-    "format": [
-      "vendor/bin/phpcbf . -v"
-    ],
-    "lint": [
-      "vendor/bin/phpcs . -v"
+    "post-install-cmd": [
+      "./vendor/bin/wp core download --url=$( composer run url:com ) || echo $?;"
     ]
+  },
+  "require": {
+    "php": ">=8.1",
+    "ext-mysqli": "*",
+    "richardtmiles/carbonphp": "13.0.*"
+  },
+  "require-dev": {
+    "wp-cli/wp-cli-bundle": "2.7.1",
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "ScalingWPDB\\": "src/"
+    }
   }
 }

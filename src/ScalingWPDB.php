@@ -1,13 +1,16 @@
 <?php
 
-namespace CarbonPHP;
+namespace ScalingWPDB;
 
 /**
  * The main LudicrousDB class, which extends wpdb
  *
  * @since 1.0.0
  */
-class LudicrousDB extends wpdb {
+class ScalingWPDB extends wpdb {
+
+
+    public const CLASS_DIRECTORY = __DIR__;
 
 	/**
 	 * The last table that was queried
@@ -939,14 +942,8 @@ class LudicrousDB extends wpdb {
 				return false;
 			}
 		} else {
-
-			// Check if functions exists (they do not in PHP 7)
-			if ( ( true === $this->persistent ) && function_exists( 'mysql_pconnect' ) ) {
-				$this->dbhs[ $dbhname ] = mysql_pconnect( $host, $user, $password, $new_link, $client_flags );
-			} elseif ( function_exists( 'mysql_connect' ) ) {
-				$this->dbhs[ $dbhname ] = mysql_connect( $host, $user, $password, $new_link, $client_flags );
-			}
-		}
+            throw new
+        }
 	}
 
 	/**
