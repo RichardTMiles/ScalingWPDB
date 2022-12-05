@@ -51,6 +51,8 @@ abstract class Info extends wpdb
             // Table name
         } elseif (is_string($dbh_or_table)) {
 
+            /** @noinspection SqlDialectInspection */
+            /** @noinspection SqlNoDataSourceInspection */
             $dbh = $this->connectBasedOnQuery("SELECT FROM {$dbh_or_table} {$this->users}");
 
         }

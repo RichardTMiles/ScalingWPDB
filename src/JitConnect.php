@@ -6,7 +6,7 @@ use CarbonPHP\Error\PublicAlert;
 use CarbonPHP\Error\ThrowableHandler;
 use Throwable;
 
-abstract class JitConnect extends Info
+abstract class JitConnect extends Overrides
 {
 
     /**
