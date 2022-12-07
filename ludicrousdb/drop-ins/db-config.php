@@ -1,20 +1,16 @@
 <?php
 
+/**
+ * LudicrousDB configuration file
+ *
+ * This file should be copied to ABSPATH/db-config.php and modified to suit your
+ * database environment. This file comes with a basic configuration by default.
+ *
+ * See README.md for documentation.
+ */
 
-use CarbonPHP\Error\ThrowableHandler;
-use ScalingWPDB\ScalingWPDB;
-
-
-try {
-
-    $wpdb = new ScalingWPDB();
-
-} catch (Throwable $e) {
-
-    ThrowableHandler::generateLogAndExit($e);
-
-}
-
+// Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 /**
  * charset (string)
@@ -98,10 +94,10 @@ $wpdb->cache_group = 'ludicrousdb';
  * the 'global' dataset. (Every table is in 'global' by default.)
  */
 $wpdb->add_database( array(
-    'host'     => DB_HOST,     // If port is other than 3306, use host:port.
-    'user'     => DB_USER,
-    'password' => DB_PASSWORD,
-    'name'     => DB_NAME,
+	'host'     => DB_HOST,     // If port is other than 3306, use host:port.
+	'user'     => DB_USER,
+	'password' => DB_PASSWORD,
+	'name'     => DB_NAME,
 ) );
 
 /**
@@ -109,12 +105,12 @@ $wpdb->add_database( array(
  * The last three parameters are set to the defaults but are shown for clarity.
  */
 $wpdb->add_database( array(
-    'host'     => DB_HOST,     // If port is other than 3306, use host:port.
-    'user'     => DB_USER,
-    'password' => DB_PASSWORD,
-    'name'     => DB_NAME,
-    'write'    => 0,
-    'read'     => 1,
-    'dataset'  => 'global',
-    'timeout'  => 0.2,
+	'host'     => DB_HOST,     // If port is other than 3306, use host:port.
+	'user'     => DB_USER,
+	'password' => DB_PASSWORD,
+	'name'     => DB_NAME,
+	'write'    => 0,
+	'read'     => 1,
+	'dataset'  => 'global',
+	'timeout'  => 0.2,
 ) );
