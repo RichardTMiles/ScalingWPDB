@@ -180,7 +180,7 @@ trait Variables
      *
      * @var array
      */
-    private $tcp_cache = array();
+    public $tcp_cache = array();
 
     /**
      * Name of object cache group.

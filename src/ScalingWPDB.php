@@ -365,15 +365,6 @@ class ScalingWPDB extends Overrides {
         // Set added
         $added = true;
     }
-
-
-
-
-
-
-
-
-
-
+    
 
 }
