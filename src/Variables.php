@@ -188,4 +188,18 @@ trait Variables
      * @var string
      */
     public $cache_group = 'ludicrousdb';
+
+    /**
+     * Whether to ignore slave lag.
+     *
+     * @var bool
+     */
+    public $ignore_slave_lag = false;
+
+    /**
+     * Number of unique servers.
+     *
+     * @var int
+     */
+    public $unique_servers = null;
 }

@@ -94,7 +94,7 @@ class Functions extends wpdb
 
             // Table name
         } elseif ( is_string( $dbh_or_table ) ) {
-            $dbh = $this->db_connect( "SELECT FROM {$dbh_or_table} {$this->users}" );
+            $dbh = $this->justInTimeConnect( "SELECT FROM {$dbh_or_table} {$this->users}" );
         }
 
         return $dbh;
