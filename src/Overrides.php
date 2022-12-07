@@ -275,7 +275,7 @@ abstract class Overrides extends Functions
 
                 if ( $this->dbh_type_check( $dbh ) ) {
                     if ( true === $this->use_mysqli ) {
-                        $client_version = mysqli_get_client_info( $dbh );
+                        $client_version = mysqli_get_client_info( );
                     } else {
                         $client_version = mysql_get_client_info( $dbh );
                     }
