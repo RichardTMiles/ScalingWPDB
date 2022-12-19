@@ -21,7 +21,8 @@ class ScalingWPDB extends Overrides {
      * @param float  $float_timeout Timeout as float number.
      * @return bool true when $host:$post responds within $float_timeout seconds, else false
      */
-    public function check_tcp_responsiveness( $host, $port, $float_timeout ) {
+    public function check_tcp_responsiveness( string $host, int $port, float $float_timeout ): bool|string
+    {
 
         // Get the cache key
         $cache_key = $this->tcp_get_cache_key( $host, $port );
