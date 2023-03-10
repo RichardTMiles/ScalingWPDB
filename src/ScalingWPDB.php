@@ -31,11 +31,13 @@ class ScalingWPDB extends Overrides {
         $cached_value = $this->tcp_cache_get( $cache_key );
 
         // Confirmed up or down response
-        if ( 'up' === $cached_value ) {
+        if ('up' === $cached_value) {
             $this->tcp_responsive = true;
 
             return true;
-        } elseif ( 'down' === $cached_value ) {
+        }
+
+        if ('down' === $cached_value) {
             $this->tcp_responsive = false;
 
             return false;

@@ -29,7 +29,7 @@
   "require": {
     "php": ">=8.1",
     "ext-mysqli": "*",
-    "richardtmiles/carbonphp": "13.*"
+    "richardtmiles/carbonphp": "14.*"
   },
   "require-dev": {
     "wp-cli/wp-cli-bundle": "2.7.1",
