@@ -27,6 +27,7 @@ node_modules
 
 vendor
 composer.lock
+*.iml
 
 # Users Environment Variables
 .lock-wscript

@@ -1,5 +1,5 @@
 {
-  "name": "drop-in-gaming/scalingwpdb",
+  "name": "richardtmiles/scalingwpdb",
   "description": "LudicrousDB is a database class that supports replication, failover, load balancing, & partitioning, based on Automattic's HyperDB drop-in.",
   "homepage": "https://github.com/dropingaming/scalingwpdb",
   "license"    : "GPL-2.0-or-later",
@@ -29,7 +29,7 @@
   "require": {
     "php": ">=8.1",
     "ext-mysqli": "*",
-    "carbonorm/carbonphp": ">=18.*"
+    "carbonorm/carbonphp": ">=18"
   },
   "require-dev": {
     "wp-cli/wp-cli-bundle": "2.7.1",
